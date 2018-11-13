@@ -28,4 +28,23 @@ router.post('/', (request, response) => {
         .catch(error => console.log(error));
 });
 
+// @route   DELETE api/items/:id
+// @desc    Create an Item
+// @access  Public
+router.delete('/:id', (request, response) => {
+    Item.findById(request.params.id)
+        .then(item => {
+            item.remove()
+                .then(() => response.json({
+                    success: true
+                }))
+        })
+        .catch(error => {
+            console.log(error);
+            response.status(404).json({
+                success: false
+            });
+        });
+});
+
 module.exports = router;
