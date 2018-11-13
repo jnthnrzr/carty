@@ -1,13 +1,12 @@
-# Chaat
-A chat application made with Express, Socket.IO, Node.JS and jQuery.
+# MERN Shopping List
+
+A shopping list application made with the MERN stack.
 
 ## Installation
+
 1. Install dependencies  
-`npm install`
-2. Run dev server
-`npm run dev`
+    `npm install`
+
+2. 
 
 ## Todo
-- [ ] Add TypeScript
-- [ ] Refactor jQuery
-- [ ] Tests
