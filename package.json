@@ -4,13 +4,16 @@
   "description": "Shopping list built with the MERN stack",
   "main": "server.js",
   "scripts": {
+    "client": "npm start --prefix client",
+    "client-install": "npm install --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "start": "node server.js",
     "server": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://"
+    "url": "https://github.com/jnthnrzr/fullstackjs.git"
   },
   "author": "Jonathan Rozario",
   "license": "MIT",
