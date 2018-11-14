@@ -4,7 +4,7 @@ const router = express.Router();
 // Item Model
 const Item = require('../../models/item');
 
-// @route   GET api/items
+// @route   GET api/shoppingList
 // @desc    Get All Items
 // @access  Public
 router.get('/', (request, response) => {
@@ -15,7 +15,7 @@ router.get('/', (request, response) => {
         .then(items => response.json(items));
 });
 
-// @route   POST api/items
+// @route   POST api/shoppingList
 // @desc    Create an Item
 // @access  Public
 router.post('/', (request, response) => {
@@ -28,7 +28,7 @@ router.post('/', (request, response) => {
         .catch(error => console.log(error));
 });
 
-// @route   DELETE api/items/:id
+// @route   DELETE api/shoppingList/:id
 // @desc    Create an Item
 // @access  Public
 router.delete('/:id', (request, response) => {
