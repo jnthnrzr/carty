@@ -13,17 +13,21 @@ export const getItems = () => dispatch => {
         .catch(error => console.log(error));
 };
 
+export const addItem = item => dispatch => {
+    axios
+        .post('/api/items', item)
+        .then(response =>
+            dispatch({
+                type: ADD_ITEM,
+                payload: response.data,
+            }))
+        .catch(error => console.log(error));
+};
+
 export const deleteItem = id => {
     return {
         type: DELETE_ITEM,
         payload: id,
-    };
-};
-
-export const addItem = item => {
-    return {
-        type: ADD_ITEM,
-        payload: item,
     };
 };
 
