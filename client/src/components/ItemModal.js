@@ -70,6 +70,7 @@ class ItemModal extends Component {
                                     name="name"
                                     id="item"
                                     placeholder="Add shopping item"
+                                    autofocus="autofocus"
                                     onChange={this.onChange}
                                 />
                                 <Button
