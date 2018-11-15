@@ -24,11 +24,16 @@ export const addItem = item => dispatch => {
         .catch(error => console.log(error));
 };
 
-export const deleteItem = id => {
-    return {
-        type: DELETE_ITEM,
-        payload: id,
-    };
+export const deleteItem = id => dispatch => {
+    axios
+        .delete(`/api/items/${id}`)
+        .then(response =>
+            dispatch({
+                type: DELETE_ITEM,
+                payload: id
+            }))
+        .catch(error => console.log(error));
+
 };
 
 export const setItemsLoading = () => {
