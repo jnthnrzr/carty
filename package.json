@@ -1,7 +1,7 @@
 {
-  "name": "shopping-list",
+  "name": "carty",
   "version": "1.0.0",
-  "description": "A shopping list app where entries can be added or removed",
+  "description": "A responsive minimalist app where entries can be added or removed",
   "main": "server.js",
   "scripts": {
     "client": "npm start --prefix client",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jnthnrzr/fullstackjs.git"
+    "url": "https://github.com/jnthnrzr/carty.git"
   },
   "author": "Jonathan Rozario",
   "license": "MIT",
