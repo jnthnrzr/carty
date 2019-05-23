@@ -1,6 +1,6 @@
-# Shopping List
+# Carty
 
-A shopping list app where entries can be added or removed. Transitions and smooth animations supplement the responsive design of the frontend.
+A responsive minimalist app where entries can be added or removed. Transitions and smooth animations supplement the responsive design of the frontend.
 
 ## Secrets
 
